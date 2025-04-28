@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Fale Conosco - Giantonni</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .formulario, .informacoes {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn-primary {
+      background-color: #198754;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background-color: #146c43;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section style="background-color: #f9f9f9;">
+    <div class="container">
+      
+      <!-- Formulário à esquerda -->
+      <div class="formulario">
+        <h2>Fale Conosco</h2>
+        <p>Precisa falar com a gente? Utilize uma das opções abaixo para entrar em contato conosco.</p>
+        
+        <form>
+          <label>*Nome:</label>
+          <input type="text" required>
+
+          <label>Empresa:</label>
+          <input type="text">
+
+          <label>*E-mail:</label>
+          <input type="email" required>
+
+          <label>Telefone:</label>
+          <input type="text">
+
+          <label>Assunto:</label>
+          <input type="text">
+
+          <label>*Mensagem:</label>
+          <textarea required rows="5"></textarea>
+
+          <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Informações da empresa à direita -->
+      <div class="informacoes">
+        <h2>Informações da Empresa</h2>
+
+        <p><strong>Central de Atendimento ao Cliente</strong><br>(41) 98720-9680</p>
+
+        <p><strong>Atendimento Online</strong><br>Tecle com nossos vendedores em tempo real e tire suas dúvidas.</p>
+
+        <p><strong>E-mail</strong><br>
+        <a href="milton:contato@giantonni.com.br">contato@giantonni.com.br</a></p>
+
+        <p><strong>Dados da Empresa</strong><br>
+        GIANTONNI COMERCIO DE CALCADOS LTDA<br>
+        CNPJ:  74.522.57062/0001-41</p>
+
+        <p><strong>Nosso Endereço</strong><br>
+        Giantonni<br>
+        Rua Martim Afonso, 2950<br>
+        Curitiba - PR<br>
+        CEP: 80730-030</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
